@@ -1,0 +1,39 @@
+From mwhapples at aim.com  Mon Dec 15 15:09:39 2008
+From: mwhapples at aim.com (Michael Whapples)
+Date: Mon, 15 Dec 2008 14:09:39 +0000
+Subject: [Yabt-users] YABT-2.0b2Update1
+Message-ID: <49466523.4000404@aim.com>
+
+===================
+YABT-2.0b2Update1 released
+===================
+
+YABT-2.0b2Update1 has been released and is now available on the python 
+package index at http://pypi.python.org/pypi/YABT. This is only an 
+update release which means that YABT has not changed in its API, only 
+bug fixes and very minor alterations have been made. Alterations include:
+* The YABT_translate script has been renamed to yabt-trans
+* The yabt-trans script has gained a -o option to optionally output to a 
+file (previously only possible by redirection in the past).
+* yabt-trans can accept input from standard input, so now yabt-trans can 
+be used within a pipe (for both input and output). This feature works by 
+file, so the end of file sequence needs to be given before translation 
+will start, this shouldn't affect piping or redirection, keyboard input 
+would be the only situation where this may be noticed.
+
+What is YABT
+============
+
+YABT originally was developed as a context sensetive Braille trnslation 
+system, but the code so general, particularly
+with this release, that it is now being just classified as a context 
+sensetive string manipulation tool. YABT comes with
+a rule implementation which uses a finite state machine and context 
+matching and a Braille translation table for text to
+British Braille.
+
+YABT looks to be as useful as possible to developers, so if you find 
+bugs or just have comments for how it could be
+improved then please don't hesitate to provide feedback.
+
+
